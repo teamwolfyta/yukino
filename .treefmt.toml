@@ -1,0 +1,28 @@
+allow-missing-formatter = true
+excludes = [".direnv/**/*"]
+
+[formatter.alejandra]
+command = "alejandra"
+includes = ["*.nix"]
+
+[formatter.jsonfmt]
+command = "jsonfmt"
+includes = ["*.json"]
+options = ["-w"]
+
+[formatter.keep-sorted]
+command = "keep-sorted"
+includes = ["*"]
+
+[formatter.mdformat]
+command = "mdformat"
+includes = ["*.md"]
+
+[formatter.taplo-format]
+command = "taplo"
+includes = ["*.toml"]
+options = ["format"]
+
+[formatter.yamlfmt]
+command = "yamlfmt"
+includes = ["*.yaml", "*.yml"]

@@ -1,0 +1,22 @@
+"$schema" = "https://raw.githubusercontent.com/evilmartians/lefthook/master/schema.json"
+
+assert_lefthook_installed = true
+
+[commit-msg.commands.commitlint]
+run = "commitlint --edit"
+
+[pre-commit.commands.deadnix]
+glob = "*.nix"
+run = "deadnix {staged_files} --fail"
+
+[pre-commit.commands.statix]
+run = "statix check"
+
+[pre-commit.commands.taplo-lint]
+glob = "*.toml"
+run = "taplo lint {staged_files}"
+
+[pre-commit.commands.treefmt]
+interactive = true
+run = "treefmt"
+stage_fixed = true
