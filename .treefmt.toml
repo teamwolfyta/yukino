@@ -5,11 +5,6 @@ excludes = [".direnv/**/*"]
 command = "alejandra"
 includes = ["*.nix"]
 
-[formatter.jsonfmt]
-command = "jsonfmt"
-includes = ["*.json"]
-options = ["-w"]
-
 [formatter.keep-sorted]
 command = "keep-sorted"
 includes = ["*"]

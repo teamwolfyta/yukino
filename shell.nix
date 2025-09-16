@@ -5,7 +5,6 @@ pkgs.mkShellNoCC {
     alejandra
     commitlint
     deadnix
-    jsonfmt
     keep-sorted
     lefthook
     nil
